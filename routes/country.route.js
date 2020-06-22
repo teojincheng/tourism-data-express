@@ -10,7 +10,7 @@ const createCountryObj = async (countryData) => {
 };
 
 const getAllCountryData = async () => {
-  const countriesData = await Country.find({}, "-__v");
+  const countriesData = await Country.find({}, "-__v -_id");
   return countriesData;
 };
 
